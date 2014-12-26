@@ -16,8 +16,8 @@
 
 	<licenses>
 		<license>
-			GNU Lesser General Public License
-			(https://www.gnu.org/licenses/lgpl.html)
+			<name>GNU Lesser General Public License</name>
+			<url>https://www.gnu.org/licenses/lgpl.html</url>
 		</license>
 	</licenses>
 
