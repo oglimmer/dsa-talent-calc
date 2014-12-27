@@ -19,7 +19,7 @@ public class MathBasedCalc implements Calculator {
 	private void noTalentPoints() {
 		winRate = 1;
 		for (int i = 0; i < attributeVal.length; i++) {
-			winRate *= (Math.max(1, attributeVal[i] + taw)) / (double) rollMax;
+			winRate *= (Math.max(1, Math.min(19, attributeVal[i] + taw))) / (double) rollMax;
 		}
 		winRate = Calculator.round(winRate);
 	}
