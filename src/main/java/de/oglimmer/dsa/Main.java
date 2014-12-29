@@ -6,10 +6,10 @@ import java.util.stream.Collectors;
 
 import org.apache.commons.lang.ArrayUtils;
 
-public class DSATalentPoints {
+public class Main {
 
 	public static void main(String[] args) {
-		new DSATalentPoints(convertToInts(args));
+		new Main(convertToInts(args));
 	}
 
 	private static int[] convertToInts(String[] args) {
@@ -17,10 +17,10 @@ public class DSATalentPoints {
 		return ArrayUtils.toPrimitive(intList.toArray(new Integer[intList.size()]));
 	}
 
-	public DSATalentPoints(int[] talentVal) {
+	public Main(int[] talentVal) {
 
 		for (int taw = -10; taw < 16; taw++) {
-			TalentRollSuccessCalculator trsc = new TalentRollSuccessCalculator(talentVal, taw, 20);
+			WinRateCalculator trsc = new WinRateCalculator(talentVal, taw, 20);
 			System.out.println("P(win) for TaW=" + taw + " == " + trsc.getWinRate() + "%");
 		}
 
