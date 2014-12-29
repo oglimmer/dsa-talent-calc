@@ -70,7 +70,7 @@ class DieRollGenerator {
 
 	void setRollsToTrials(int rollSequenceNumber) {
 		for (int dieNo = 0; dieNo < trials.length; dieNo++) {
-			int dieValue = (int) ((((rollSequenceNumber - 1) / Math.pow(20, dieNo)) % 20) + 1);
+			int dieValue = (int) ((((rollSequenceNumber - 1) / Math.pow(rollMax, dieNo)) % rollMax) + 1);
 			assert dieValue >= 1 && dieValue <= rollMax;
 			trials[dieNo].roll(dieValue);
 		}
