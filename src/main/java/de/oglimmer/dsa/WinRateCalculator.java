@@ -54,7 +54,7 @@ public class WinRateCalculator {
 }
 
 /**
- * Given the number of dice and the max value for a dice, it generates all possible rolls for that dices.
+ * Given the number of dice and the max value for a die, it generates all possible rolls for that dice.
  * 
  * @author oli
  */
