@@ -28,7 +28,7 @@ public enum DSATalentTestCalcVersion {
 			long time = Long.parseLong(Manifests.read(prefix + "-Creation-Date"));
 			creationDate = DateFormat.getDateTimeInstance(DateFormat.SHORT, DateFormat.SHORT).format(new Date(time));
 			dsaCalcVersion = Manifests.read(prefix + "-Version");
-		} catch (NumberFormatException e) {
+		} catch (IllegalArgumentException e) {
 			commit = "?";
 			creationDate = "?";
 			dsaCalcVersion = "?";
