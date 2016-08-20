@@ -63,9 +63,10 @@
 				<configuration>
 					<archive>
 						<manifestEntries>
-							<DSA-TalCalc-Git-Commit>${buildNumber}</DSA-TalCalc-Git-Commit>
-							<DSA-TalCalc-Creation-Date>${timestamp}</DSA-TalCalc-Creation-Date>
-							<DSA-TalCalc-Version>${project.version}</DSA-TalCalc-Version>
+							<dsa-talcalc-core-git-commit>${buildNumber}</dsa-talcalc-core-git-commit>
+							<dsa-talcalc-core-git-url>${project.scm.url}</dsa-talcalc-core-git-url>
+							<dsa-talcalc-core-creation-date>${timestamp}</dsa-talcalc-core-creation-date>
+							<dsa-talcalc-core-project-version>${project.version}</dsa-talcalc-core-project-version>
 						</manifestEntries>
 					</archive>
 				</configuration>
@@ -81,14 +82,9 @@
 			<scope>test</scope>
 		</dependency>
 		<dependency>
-			<groupId>org.slf4j</groupId>
-			<artifactId>slf4j-api</artifactId>
-			<version>1.7.9</version>
-		</dependency>
-		<dependency>
-			<groupId>ch.qos.logback</groupId>
-			<artifactId>logback-classic</artifactId>
-			<version>1.1.2</version>
+			<groupId>de.oglimmer</groupId>
+			<artifactId>utils</artifactId>
+			<version>0.1-SNAPSHOT</version>
 		</dependency>
 		<dependency>
 			<groupId>commons-lang</groupId>
